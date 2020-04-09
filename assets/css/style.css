@@ -33,13 +33,12 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 100px 80px;
-
+    padding: 50px 80px;
 }
 ul {
     list-style: none;
 }
-section.not(.hero):nth-child(even) {
+section:not(.hero):nth-child(even) {
     background-color: #f5f5f5;
 }
 .grid {
@@ -49,7 +48,7 @@ section.not(.hero):nth-child(even) {
     width: 100%;
 }
 hr {
-    background-color: #555555;
+    background-color: #7abccf;
     border: 0;
     height: 3px;
     margin: 20px 0 40px;
@@ -167,7 +166,7 @@ header nav li {
 **********************************************/
 .packages .grid li {
     flex-basis: 50%;
-    padding: 50px;
+    padding: 25px 50px;
     text-align: center;
 }
 .packages .grid li .icon {
@@ -186,4 +185,59 @@ header nav li {
     font-weight: 300;
     line-height: 1.5;
     margin: 40px 0 25px;
+}
+
+/**********************************************
+ CONTACT
+**********************************************/
+.contact form {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+.contact form .btn {
+    color: #ffffff;
+    padding: 18px 42px;
+}
+.contact form input {
+    color: #555555;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 30px;
+    padding: 15px;
+}
+
+/**********************************************
+ FOOTER
+**********************************************/
+footer {
+    align-items: center;
+    background-color: #7abccf;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    margin-left: 16px;
+}
+footer p {
+    align-self: center;
+    font-size: 14px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+footer p.copyright {
+    font-size: 11px;
+}
+footer p a {
+    color: #ffffff;
+}
+footer p.copyright a {
+    color: #ffffff;
 }
