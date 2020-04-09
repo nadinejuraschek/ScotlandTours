@@ -1,3 +1,55 @@
-body {
-    background-color: #eeeeee;
+/**********************************************
+ GENERAL
+**********************************************/
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('https://images.unsplash.com/photo-1524756614325-ab25ba59e6e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+}
+html {
+    font: normal 16px sans-serif;
+    color: #555555;
+}
+nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    opacity: 0.75;
+}
+a:hover {
+    opacity: 1;
+}
+
+/**********************************************
+ HEADER
+**********************************************/
+header {
+    align-items: center;
+    animation: 1s fadein 0.5s forwards;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    padding: 35px 100px 0;
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+header h2 {
+    font-family: 'Quicksand', 'Arial', sans-serif;
+}
+header a {
+    color: #ffffff;
+}
+header nav {
+    display: flex;
+    margin-right: -15px;
+}
+header nav li {
+    margin: 0 15px;
 }
