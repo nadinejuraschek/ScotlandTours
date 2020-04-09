@@ -6,8 +6,6 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
-    background-image: url('https://images.unsplash.com/photo-1524756614325-ab25ba59e6e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
 }
 html {
     font: normal 16px sans-serif;
@@ -23,6 +21,21 @@ a {
 a:hover {
     opacity: 1;
 }
+a.btn {
+    border-radius: 4px;
+    background-color: #CF7D3E;
+    font-weight: bold;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px;
+
+}
 
 /**********************************************
  HEADER
@@ -30,10 +43,13 @@ a:hover {
 header {
     align-items: center;
     animation: 1s fadein 0.5s forwards;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     opacity: 0;
     padding: 35px 100px 0;
+    position: absolute;
+    width: 100%;
 }
 @keyframes fadein {
     100% {
@@ -52,4 +68,48 @@ header nav {
 }
 header nav li {
     margin: 0 15px;
+}
+
+/**********************************************
+ HERO
+**********************************************/
+.hero {
+    color: #ffffff;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.hero .background-image {
+    background-color:#fafafa;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.hero h1 {
+    font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.hero h3 {
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+.hero a.btn {
+    color: #ffffff;
+    padding: 20px 40px;
+}
+.hero-content-area {
+    animation: 1s slideup 1s forwards;
+    margin-top: 100px;
+    opacity: 0;
+}
+@keyframes slideup {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
 }
